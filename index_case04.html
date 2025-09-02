@@ -2,104 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case-03</title>
+    <title>Case-04</title>
     <link rel="stylesheet" href="assest/lib/normalize.css">
 
     <style>
-        div {
-            height: 200px;
-            width: 200px;
-            border-radius: 100%;
+        .main-div {
+            width: 100vw;
+            height: 100vh;
             position: absolute;
             text-align: center;
-            line-height: 200px;
         }
 
-        h1 {
+        .main-div > div {
+            position: sticky;
+            width: 100vw;
+            height: 100px;
+            top: 0;
+        }
+
+        .main-div > div > h1 {
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
         }
 
-        #main-in {
-            height: 200px;
-            width: 200px;
-            border-radius: 100%;
-            position: fixed;
-            border: 20px solid purple;
-            top: 0;
-            right: 0;
-            bottom: 0;
+        .main-div > h1 {
+            position: absolute;
+            top: 250px;
             left: 0;
-            margin: auto;
-        }
-
-        #main-out {
-            height: 220px;
-            width: 220px;
-            border-radius: 100%;
-            position: fixed;
-            top: 0;
             right: 0;
-            bottom: 0;
-            left: 0;
             margin: auto;
-            border: 20px solid green;
         }
 
         #div-01 {
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            background-color: yellow;
+        }
+
+        #div-01 > div {
+            background-color: hotpink;
         }
 
         #div-02 {
-            top: 600px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            background-color: brown;
+            top: 100vh;
+        }
+
+        #div-02 > div {
+            background-color: greenyellow;
         }
 
         #div-03 {
-            top: 1200px;
-            left: 0;
-            right: 0;
-            bottom: 500px;
-            margin: auto;
-            background-color: deeppink;
+            top: 200vh;
         }
 
-        #bottom-div {
-            bottom: 0;
-            top: 1228px;
+        #div-03 > div {
+            background-color: seagreen;
         }
-
     </style>
 </head>
-
 <body>
-
-    <div id="div-01">
+    <div id="div-01" class="main-div">
         <h1>Hello</h1>
+        <div>
+            <h1>Card 01</h1>
+        </div>
     </div>
-    <div id="div-02">
-        <h1>Welcome</h1>
+
+    <div id="div-02" class="main-div">
+        <h1>Welcome to</h1>
+        <div>
+            <h1>Card 02</h1>
+        </div>
     </div>
-    <div id="div-03">
+
+    <div id="div-03" class="main-div">
         <h1>IJSE</h1>
+        <div>
+            <h1>Card 03</h1>
+        </div>
     </div>
-
-    <div id="main-in"></div>
-    <div id="main-out"></div>
-
-    <div id="bottom-div"></div>
 
 </body>
 </html>
