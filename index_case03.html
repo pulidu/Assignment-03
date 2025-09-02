@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case3</title>
+    <style>
+        #outer_border{
+            width: 350px;
+            height: 350px;
+            border: 20px solid darkgray;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 11;
+
+        }
+        #in_border{
+              width: 310px;
+            height: 310px;
+            border: 20px solid goldenrod;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 10;
+        }
+        #circle{
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .scroll{
+             width: 330px;
+            height: 330px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            margin: 400px;
+            right: 30px;
+        }
+            
+        #small_circle1{
+            background-color:hotpink;
+        }
+        #small_circle2{
+            background-color: lightseagreen;
+        }
+        #small_circle3{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <div class="scroll" id="small_circle1">
+            <p>Hello!</p>
+        </div>
+        <div class="scroll" id="small_circle2">
+            <p>Wellcome to</p>
+        </div>
+        <div class="scroll" id="small_circle3">
+            <p>IJSE</p>
+        </div>
+    </div>
+
+    <div id="outer_border"></div>
+    <div id="in_border"></div>
+
+    
+</body>
+</html>
